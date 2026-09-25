@@ -1,0 +1,39 @@
+# ==============================================================================
+# VoxGuard Unified Backend Dependencies
+# ==============================================================================
+
+# Core API & Async Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+python-jose>=3.3.0
+
+# Database & ORM
+SQLAlchemy>=2.0.0
+psycopg[binary]>=3.1.0
+
+# Scientific & DSP Feature Extraction
+numpy>=1.24.0
+scipy>=1.11.0
+soundfile>=0.12.1
+
+# Security & Cryptography
+cryptography>=42.0.0
+passlib[bcrypt]>=1.7.4
+
+# Anti-Spoofing & ONNX Deepfake Inference
+onnxruntime>=1.17.0
+
+# Multilingual ASR & Biometric Speaker Verification (Optional for full local PyTorch inference)
+# Install via: pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+# torch>=2.1.0
+# torchaudio>=2.1.0
+# speechbrain>=1.0.0
+# openai-whisper>=20231117
+# librosa>=0.10.1
+
+# Testing
+pytest>=8.0.0
+httpx>=0.27.0

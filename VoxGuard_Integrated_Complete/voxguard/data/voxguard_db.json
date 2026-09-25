@@ -1,0 +1,344 @@
+{
+  "users": [
+    {
+      "id": "USR-9901",
+      "name": "Officer Sarah Jenkins",
+      "email": "sarah.jenkins@voxguard.ai",
+      "phone": "+91 98765 43210",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "Level-3 SOC Commander",
+      "voiceId": "VG-001",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+      "createdAt": "2026-09-16T19:51:00.942Z"
+    },
+    {
+      "id": "USR-B-1042",
+      "name": "Rahul",
+      "email": "rahul@email.com",
+      "phone": "+91 98765 3210",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "Brother / Family Contact",
+      "voiceId": "VG-104",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+      "createdAt": "2026-09-16T19:51:00.943Z"
+    }
+  ],
+  "settings": {
+    "USR-9901": {
+      "voiceDetection": true,
+      "callerVerification": true,
+      "suspiciousAlerts": true,
+      "autoBlocking": false,
+      "protectionLevel": "Enhanced"
+    },
+    "USR-B-1042": {
+      "voiceDetection": true,
+      "callerVerification": true,
+      "suspiciousAlerts": true,
+      "autoBlocking": false,
+      "protectionLevel": "Standard"
+    }
+  },
+  "contacts": [
+    {
+      "id": "CNT-101",
+      "userId": "USR-9901",
+      "name": "Rahul Suthar",
+      "phone": "+91 98765 3210",
+      "relationship": "Brother / Family",
+      "voiceId": "VG-104",
+      "isTrusted": true,
+      "verified": true,
+      "createdAt": "2026-09-16T19:51:00.943Z"
+    },
+    {
+      "id": "CNT-102",
+      "userId": "USR-9901",
+      "name": "Dr. Ananya Sharma",
+      "phone": "+91 98123 45678",
+      "relationship": "Primary Physician",
+      "voiceId": "VG-208",
+      "isTrusted": true,
+      "verified": true,
+      "createdAt": "2026-09-16T19:51:00.943Z"
+    }
+  ],
+  "calls": [
+    {
+      "callId": "call_1789612776784_huv697",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:39:36.784Z"
+    },
+    {
+      "callId": "call_1789612672716_2hwrml",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:37:52.716Z"
+    },
+    {
+      "callId": "call_1789612669079_7yncp2",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:37:49.079Z"
+    },
+    {
+      "callId": "call_1789612658793_pbgcfw",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:37:38.795Z"
+    },
+    {
+      "callId": "call_1789612508241_7c13jt",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:35:08.241Z"
+    },
+    {
+      "callId": "call_1789612506137_rpmmj7",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:35:06.136Z"
+    },
+    {
+      "callId": "call_1789612502494_qokvsn",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:35:02.496Z"
+    },
+    {
+      "callId": "call_1789612497859_rh578s",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:34:57.861Z"
+    },
+    {
+      "callId": "call_1789612491450_mspaok",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:34:51.450Z"
+    },
+    {
+      "callId": "call_1789612487118_552ox5",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:34:47.118Z"
+    },
+    {
+      "callId": "call_1789612483690_fhtz8g",
+      "callerId": "USR-9901",
+      "caller": {
+        "id": "USR-9901",
+        "name": "Officer Sarah Jenkins",
+        "email": "sarah.jenkins@voxguard.ai",
+        "role": "Level-3 SOC Commander",
+        "phone": "+91 98765 43210",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+        "voiceId": "VG-001"
+      },
+      "receiverId": "USR-B-1042",
+      "status": "missed",
+      "startedAt": null,
+      "endedAt": null,
+      "duration": 0,
+      "createdAt": "2026-09-17T02:34:43.691Z"
+    },
+    {
+      "callId": "VG-CALL-1042",
+      "callerId": "USR-B-1042",
+      "caller": {
+        "id": "USR-B-1042",
+        "name": "Rahul",
+        "phone": "+91 98765 3210",
+        "relationship": "Brother / Family"
+      },
+      "receiverId": "USR-9901",
+      "status": "ended",
+      "startedAt": "2026-09-16T18:51:00.943Z",
+      "endedAt": "2026-09-16T18:52:40.943Z",
+      "duration": 100,
+      "authenticScore": 92,
+      "riskLevel": "LOW",
+      "createdAt": "2026-09-16T18:51:00.943Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "VG-1042",
+      "userId": "USR-9901",
+      "title": "Voice Clone Attack Intercepted",
+      "desc": "Incoming call from +91 XXXXX 3210 blocked (Risk 91)",
+      "threatType": "Voice Clone Attack",
+      "riskScore": 91,
+      "status": "BLOCKED",
+      "callerPhone": "+91 XXXXX 3210",
+      "createdAt": "2026-09-16T17:51:00.943Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "userId": "USR-9901",
+      "title": "Voice Clone Attack Intercepted",
+      "desc": "Incoming call from +91 XXXXX 3210 blocked (Risk 91)",
+      "time": "10:42 AM",
+      "type": "threat",
+      "link": "/incidents/VG-1042",
+      "read": false
+    },
+    {
+      "id": "n2",
+      "userId": "USR-9901",
+      "title": "Same Voice / New Number Match",
+      "desc": "+91 XXXXX 4821 matched existing identity VG-001 (96%)",
+      "time": "09:54 AM",
+      "type": "match",
+      "link": "/voice-identities/VG-001",
+      "read": false
+    }
+  ],
+  "evidenceHashes": [
+    {
+      "id": "EV-9901",
+      "userId": "USR-9901",
+      "callId": "VG-CALL-1042",
+      "sha256Hash": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4",
+      "metadata": {
+        "audioFile": "call_1042_spectral.wav",
+        "duration": 100
+      },
+      "status": "VERIFIED_IMMUTABLE",
+      "createdAt": "2026-09-16T19:51:00.943Z"
+    }
+  ]
+}

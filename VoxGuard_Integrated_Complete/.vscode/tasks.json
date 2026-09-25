@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Start Node Signaling Server (server.js)",
+      "type": "shell",
+      "command": "node server.js",
+      "options": {
+        "cwd": "${workspaceFolder}/voxguard"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "voxguard-stack"
+      }
+    },
+    {
+      "label": "2. Start Vite Frontend (React UI)",
+      "type": "shell",
+      "command": "npm.cmd run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/voxguard"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "voxguard-stack"
+      }
+    },
+    {
+      "label": "3. Start Python AI Backend (FastAPI)",
+      "type": "shell",
+      "command": "python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload",
+      "options": {
+        "cwd": "${workspaceFolder}/voxguard/backend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "group": "voxguard-stack"
+      }
+    },
+    {
+      "label": "4. Run Real-Time CLI Detector (Deepfake Scam Call)",
+      "type": "shell",
+      "command": "python realtime_incoming_call_detector.py --mode synthetic",
+      "options": {
+        "cwd": "${workspaceFolder}/voxguard/backend"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "5. Run Real-Time CLI Detector (Authentic Contact Call)",
+      "type": "shell",
+      "command": "python realtime_incoming_call_detector.py --mode human",
+      "options": {
+        "cwd": "${workspaceFolder}/voxguard/backend"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    }
+  ]
+}

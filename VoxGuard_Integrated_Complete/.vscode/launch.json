@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🛡️ Run Real-Time Call Detector CLI (Deepfake Scam)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/voxguard/backend/realtime_incoming_call_detector.py",
+      "args": ["--mode", "synthetic", "--speed", "1.0"],
+      "cwd": "${workspaceFolder}/voxguard/backend",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "👤 Run Real-Time Call Detector CLI (Authentic Contact)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/voxguard/backend/realtime_incoming_call_detector.py",
+      "args": ["--mode", "human", "--speed", "1.0"],
+      "cwd": "${workspaceFolder}/voxguard/backend",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "🚀 Start VoxGuard Python AI Backend (FastAPI)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"],
+      "cwd": "${workspaceFolder}/voxguard/backend",
+      "console": "integratedTerminal"
+    }
+  ]
+}

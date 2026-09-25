@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-page: #FAF7F2;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #EEF7FA;
+    --color-primary-navy: #0B3047;
+    --color-deep-blue: #123F59;
+    --color-soft-blue: #DCECF4;
+    --color-light-blue: #EEF7FA;
+    --color-cream: #FAF7F2;
+    --color-warm-white: #FFFFFF;
+    --color-soft-gray: #66737C;
+    --color-border: #D8E3E8;
+    --color-safe: #3FA66B;
+    --color-warning: #E8A23A;
+    --color-danger: #E45B5B;
+    --test-theme-bg: white;
+  }
+
+  html.dark, body.dark, [data-theme="dark"] {
+    --bg-page: #071A27;
+    --bg-card: #0B2638;
+    --bg-elevated: #102F42;
+    --color-primary-navy: #F5F7F8;
+    --color-deep-blue: #6FA8C5;
+    --color-soft-blue: #102F42;
+    --color-light-blue: #0B2638;
+    --color-cream: #071A27;
+    --color-warm-white: #0B2638;
+    --color-soft-gray: #AAB8C2;
+    --color-border: #234255;
+    --color-safe: #54B982;
+    --color-warning: #D9A441;
+    --color-danger: #D96A6A;
+    --test-theme-bg: black;
+  }
+
+  html, body, #root {
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    color: var(--color-primary-navy);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+/* ================================================== */
+/* COMPREHENSIVE GLOBAL DARK MODE STYLING & OVERRIDES */
+/* ================================================== */
+
+html.dark,
+body.dark,
+[data-theme="dark"] {
+  color-scheme: dark;
+  background-color: #071A27 !important;
+  color: #F5F7F8 !important;
+}
+
+/* 1. Page Backgrounds & Outer Shells */
+.dark #root,
+.dark body,
+.dark main,
+.dark .bg-\[\#FAF7F2\],
+[data-theme="dark"] .bg-\[\#FAF7F2\],
+.dark .bg-slate-50,
+.dark .bg-gray-50 {
+  background-color: #071A27 !important;
+  color: #F5F7F8 !important;
+}
+
+/* 2. White Cards, Sidebars, Headers & Modals */
+.dark .bg-white,
+[data-theme="dark"] .bg-white,
+.dark aside,
+.dark header,
+.dark nav {
+  background-color: #0B2638 !important;
+  color: #F5F7F8 !important;
+}
+
+/* 3. Elevated Ice Blue Boxes & Panels */
+.dark .bg-\[\#EEF7FA\],
+[data-theme="dark"] .bg-\[\#EEF7FA\],
+.dark .bg-blue-50,
+.dark .bg-sky-50,
+.dark .bg-slate-100 {
+  background-color: #102F42 !important;
+  color: #F5F7F8 !important;
+}
+
+/* 4. Primary Navy Headings & Text */
+.dark .text-\[\#0B3047\],
+[data-theme="dark"] .text-\[\#0B3047\],
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #F5F7F8 !important;
+}
+
+/* 5. Muted Secondary Gray Text */
+.dark .text-\[\#66737C\],
+[data-theme="dark"] .text-\[\#66737C\],
+.dark .text-slate-500,
+.dark .text-slate-600,
+.dark .text-gray-500 {
+  color: #AAB8C2 !important;
+}
+
+/* 6. Deep Blue Accent Text */
+.dark .text-\[\#123F59\],
+[data-theme="dark"] .text-\[\#123F59\] {
+  color: #6FA8C5 !important;
+}
+
+/* 7. Borders */
+.dark .border-\[\#D8E3E8\],
+.dark .border-\[\#DCECF4\],
+.dark .border-\[\#F0F4F6\],
+.dark .border-slate-200,
+.dark .border-slate-300,
+.dark .border-gray-200 {
+  border-color: #234255 !important;
+}
+
+/* 8. Form Inputs, Selects & Textareas */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #071A27 !important;
+  color: #F5F7F8 !important;
+  border-color: #234255 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #66737C !important;
+}
+
+/* 9. Interactive Item Hovers & Lists */
+.dark .hover\:bg-\[\#FAF7F2\]:hover,
+.dark .hover\:bg-\[\#EEF7FA\]:hover,
+.dark .hover\:bg-slate-100:hover,
+.dark .hover\:bg-gray-100:hover {
+  background-color: #1E384A !important;
+  color: #F5F7F8 !important;
+}
+
+/* 10. Recharts SVG Elements & Graphs */
+.dark .recharts-cartesian-grid line {
+  stroke: #234255 !important;
+}
+
+.dark .recharts-text {
+  fill: #AAB8C2 !important;
+}
+
+.dark .recharts-label {
+  fill: #F5F7F8 !important;
+}
+
+/* Custom smooth wave animations */
+@keyframes pulseWave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+
+.animate-wave {
+  animation: pulseWave 1.8s ease-in-out infinite;
+}
